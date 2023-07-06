@@ -1,0 +1,34 @@
+{
+  "animals": [
+    {
+      "name": "Elephant",
+      "image": "url_to_image",
+      "funFact": "Elephants are the world's largest land animal!",
+      "details": "More details about elephants..."
+    },
+    {
+      "name": "Lion",
+      "image": "url_to_image",
+      "funFact": "Lions are known as 'kings of the jungle', but they actually live in grasslands and plains.",
+      "details": "More details about lions..."
+    },
+    {
+      "name": "Kangaroo",
+      "image": "url_to_image",
+      "funFact": "Kangaroos use their powerful hind legs to move around and their tail for balance.",
+      "details": "More details about kangaroos..."
+    },
+    {
+      "name": "Panda",
+      "image": "url_to_image",
+      "funFact": "Pandas are famous for their love of bamboo, which makes up 99% of their diet.",
+      "details": "More details about pandas..."
+    },
+    {
+      "name": "Dolphin",
+      "image": "url_to_image",
+      "funFact": "Dolphins are highly intelligent and social marine mammals.",
+      "details": "More details about dolphins..."
+    }
+  ]
+}
