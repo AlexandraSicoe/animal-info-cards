@@ -1,6 +1,7 @@
 import Grid from "@mui/joy/Grid";
 import Typography from "@mui/joy/Typography";
 import backgroundImage from "../images/bg1.jpg";
+import Card from "@mui/joy/Card";
 
 const AnimalCards = () => {
   return (
