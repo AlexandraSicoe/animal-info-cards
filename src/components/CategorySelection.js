@@ -5,7 +5,7 @@ import backgroundImage from "../images/bg1.jpg";
 const CategorySelection = () => {
   return (
     <div
-      className="container-fluid"
+      className="container-fluid "
       style={{
         backgroundColor: "black",
         width: "100vw",
@@ -32,7 +32,7 @@ const CategorySelection = () => {
           Discover the Marvels of the Animal Kingdom
         </Typography>
         <Typography
-          level="h3"
+          level="body2"
           maxWidth={900}
           lineHeight="md"
           style={{
@@ -54,7 +54,7 @@ const CategorySelection = () => {
             style={{
               fontSize: "20px",
               color: "white",
-              marginTop: "25px",
+              margin: "15px",
               fontFamily: "Montserrat",
             }}
           >
@@ -64,6 +64,7 @@ const CategorySelection = () => {
             style={{
               fontSize: "20px",
               color: "white",
+              margin: "15px",
             }}
           >
             Mammals
@@ -72,6 +73,7 @@ const CategorySelection = () => {
             style={{
               fontSize: "20px",
               color: "white",
+              margin: "15px",
             }}
           >
             Reptiles
