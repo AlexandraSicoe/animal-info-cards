@@ -1,11 +1,28 @@
 import Grid from "@mui/joy/Grid";
-import Typography from "@mui/joy/Typography";
 import backgroundImage from "../images/bg1.jpg";
-import Card from "@mui/joy/Card";
-import CardCover from "@mui/joy/CardCover";
-import CardContent from "@mui/joy/CardContent";
+import birds from "../data/birds.json";
+import mammals from "../data/mammals.json";
+import reptiles from "../data/reptiles.json";
+import useQuery from "../helpers/useQuery";
+import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import CardComponent from "./Card";
 
 const AnimalCards = () => {
+  const query = useQuery();
+  const navigate = useNavigate();
+  const [animalData, setAnimalData] = useState(null);
+  useEffect(() => {
+    if (query.get("cat") === "birds") {
+      setAnimalData(birds);
+    } else if (query.get("cat") === "reptiles") {
+      setAnimalData(reptiles);
+    } else if (query.get("cat") === "mammals") {
+      setAnimalData(mammals);
+    } else {
+      navigate("/404");
+    }
+  }, []);
   return (
     <div
       className="container-fluid"
@@ -21,67 +38,7 @@ const AnimalCards = () => {
     >
       <Grid container justifyContent="center" alignItems="center" height="100%">
         <Grid m={2}>
-          <Card component="li" sx={{ minWidth: 300, minHeight: 400 }}>
-            <CardCover>
-              <img
-                src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800"
-                srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
-                alt=""
-              />
-            </CardCover>
-            <CardContent>
-              <Typography
-                level="body1"
-                fontWeight="lg"
-                textColor="#fff"
-                sx={{ m: "auto" }}
-              >
-                More details...
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid m={2}>
-          <Card component="li" sx={{ minWidth: 300, minHeight: 400 }}>
-            <CardCover>
-              <img
-                src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800"
-                srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
-                alt=""
-              />
-            </CardCover>
-            <CardContent>
-              <Typography
-                level="body1"
-                fontWeight="lg"
-                textColor="#fff"
-                sx={{ m: "auto" }}
-              >
-                More details...
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid m={2}>
-          <Card component="li" sx={{ minWidth: 300, minHeight: 400 }}>
-            <CardCover>
-              <img
-                src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800"
-                srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
-                alt=""
-              />
-            </CardCover>
-            <CardContent>
-              <Typography
-                level="body1"
-                fontWeight="lg"
-                textColor="#fff"
-                sx={{ m: "auto" }}
-              >
-                More details...
-              </Typography>
-            </CardContent>
-          </Card>
+          <CardComponent />
         </Grid>
       </Grid>
     </div>
