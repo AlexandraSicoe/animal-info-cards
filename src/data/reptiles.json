@@ -2,31 +2,31 @@
   "animals": [
     {
       "name": "Turtle",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/N5ByCirHVqw",
       "funFact": "Turtles have been around for over 200 million years.",
       "details": "More details about turtles..."
     },
     {
       "name": "Crocodile",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/dSljWQGDz0s",
       "funFact": "Crocodiles are the world's largest and longest reptile.",
       "details": "More details about crocodiles..."
     },
     {
       "name": "Chameleon",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/7DGdHT5LTl0",
       "funFact": "Chameleons are famous for their ability to change their color.",
       "details": "More details about chameleons..."
     },
     {
       "name": "Iguana",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/_YCUANSCaO4",
       "funFact": "Iguanas have a 'third eye', a photosensitive organ that detects light changes.",
       "details": "More details about iguanas..."
     },
     {
       "name": "Snake",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/npNhp50pZko",
       "funFact": "Snakes have flexible jaws which allow them to eat prey bigger than their head.",
       "details": "More details about snakes..."
     }

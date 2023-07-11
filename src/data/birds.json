@@ -2,31 +2,31 @@
   "animals": [
     {
       "name": "Eagle",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/EAJ1L4ZjrB4",
       "funFact": "Eagles have excellent eyesight and can detect prey up to two miles away.",
       "details": "More details about eagles..."
     },
     {
       "name": "Parrot",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/3osGqRRtQBE",
       "funFact": "Parrots are intelligent birds capable of learning many words and phrases.",
       "details": "More details about parrots..."
     },
     {
       "name": "Flamingo",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/2lKjBwKwAF8",
       "funFact": "Flamingos are famous for their bright pink feathers and stilt-like legs.",
       "details": "More details about flamingos..."
     },
     {
       "name": "Penguin",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/Ao9nWXs6G6g",
       "funFact": "Penguins are flightless birds that live almost exclusively in the Southern Hemisphere.",
       "details": "More details about penguins..."
     },
     {
       "name": "Owl",
-      "image": "url_to_image",
+      "image": "https://unsplash.com/photos/KBHqwZ4z69Y",
       "funFact": "Owls are known for their silent flight and distinctive hooting calls.",
       "details": "More details about owls..."
     }
