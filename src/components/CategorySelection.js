@@ -2,7 +2,11 @@ import Button from "@mui/joy/Button";
 import Grid from "@mui/joy/Grid";
 import Typography from "@mui/joy/Typography";
 import backgroundImage from "../images/bg1.jpg";
+import animalData from "../data/data.json";
+import { Link } from "react-router-dom";
+
 const CategorySelection = () => {
+  console.log(animalData);
   return (
     <div
       className="container-fluid "
@@ -50,34 +54,24 @@ const CategorySelection = () => {
           importance of preserving the biodiversity that surrounds us.
         </Typography>
         <div>
-          <Button
-            style={{
-              fontSize: "20px",
-              color: "white",
-              margin: "15px",
-              fontFamily: "Montserrat",
-            }}
-          >
-            Birds
-          </Button>
-          <Button
-            style={{
-              fontSize: "20px",
-              color: "white",
-              margin: "15px",
-            }}
-          >
-            Mammals
-          </Button>
-          <Button
-            style={{
-              fontSize: "20px",
-              color: "white",
-              margin: "15px",
-            }}
-          >
-            Reptiles
-          </Button>
+          {animalData.map((animal, index) => {
+            return (
+              <Link
+                key={animal.name + index}
+                to={"/animal-cards?cat=" + animal.slug}
+              >
+                <Button
+                  style={{
+                    fontSize: "20px",
+                    color: "white",
+                    margin: "15px",
+                  }}
+                >
+                  {animal.name}
+                </Button>
+              </Link>
+            );
+          })}
         </div>
       </Grid>
     </div>

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Birds",
+    "slug": "birds"
+  },
+  {
+    "name": "Mammals",
+    "slug": "mammals"
+  },
+  {
+    "name": "Reptiles",
+    "slug": "reptiles"
+  }
+]
