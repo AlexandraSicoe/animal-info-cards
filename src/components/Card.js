@@ -25,17 +25,13 @@ const CardComponent = ({ name, image, funFact, index }) => {
         <Typography level="h2" style={{ color: "white" }}>
           {name}
         </Typography>
+
         <Typography
           level="body1"
-          style={{ color: "white", textAlign: "center" }}
+          style={{ color: "white", textAlign: "center", height: "75px" }}
         >
           {funFact}
         </Typography>
-        <Typography
-          level="body1"
-          fontWeight="lg"
-          textColor="white"
-        ></Typography>
       </CardContent>
     </Card>
   );

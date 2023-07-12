@@ -29,11 +29,13 @@ const AnimalCards = () => {
     console.log(animalData);
   }, [animalData]);
   return (
-    <div
-      className="container-fluid"
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      height="100%"
       style={{
-        backgroundColor: "black",
-        height: "100vh",
+        minHeight: "100vh",
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -53,18 +55,18 @@ const AnimalCards = () => {
             </Grid>
           );
         })}
-        <Link to={"/"}>
-          <Button
-            style={{
-              fontSize: "20px",
-              color: "white",
-            }}
-          >
-            Return to the Category Selection Page
-          </Button>
-        </Link>
       </Grid>
-    </div>
+      <Link to={"/"}>
+        <Button
+          style={{
+            fontSize: "20px",
+            color: "white",
+          }}
+        >
+          Return to the Category Selection Page
+        </Button>
+      </Link>
+    </Grid>
   );
 };
 export default AnimalCards;
