@@ -2,9 +2,24 @@ import Card from "@mui/joy/Card";
 import CardCover from "@mui/joy/CardCover";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
-const CardComponent = ({ name, image, funFact, index }) => {
+const CardComponent = ({
+  name,
+  image,
+  funFact,
+  index,
+  setOpenModal,
+  details,
+  setDetailText,
+}) => {
   return (
-    <Card component="li" sx={{ width: 300, height: 400 }}>
+    <Card
+      component="li"
+      sx={{ width: 300, height: 400 }}
+      onClick={() => {
+        setOpenModal(true);
+        setDetailText(details);
+      }}
+    >
       <CardCover>
         <img src={image}></img>
       </CardCover>

@@ -1,5 +1,10 @@
 import Button from "@mui/joy/Button";
 import Grid from "@mui/joy/Grid";
+import Modal from "@mui/joy/Modal";
+import ModalClose from "@mui/joy/ModalClose";
+import ModalDialog from "@mui/joy/ModalDialog";
+
+import Typography from "@mui/joy/Typography";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import birds from "../data/birds.json";
@@ -13,6 +18,8 @@ const AnimalCards = () => {
   const query = useQuery();
   const navigate = useNavigate();
   const [animalData, setAnimalData] = useState();
+  const [openModal, setOpenModal] = useState(false);
+  const [detailText, setDetailText] = useState("");
   useEffect(() => {
     if (query.get("cat") === "birds") {
       console.log(birds);
@@ -25,9 +32,7 @@ const AnimalCards = () => {
       navigate("/404");
     }
   }, []);
-  useEffect(() => {
-    console.log(animalData);
-  }, [animalData]);
+
   return (
     <Grid
       container
@@ -51,6 +56,9 @@ const AnimalCards = () => {
                 image={animal.image}
                 funFact={animal.funFact}
                 index={index}
+                details={animal.details}
+                setDetailText={setDetailText}
+                setOpenModal={setOpenModal}
               />
             </Grid>
           );
@@ -66,6 +74,18 @@ const AnimalCards = () => {
           Return to the Category Selection Page
         </Button>
       </Link>
+      <Modal open={openModal}>
+        <ModalDialog sx={{ width: "400px" }}>
+          <ModalClose
+            onClick={() => {
+              setOpenModal(false);
+            }}
+          />
+          <Typography>{detailText}</Typography>
+          <Typography>{detailText}</Typography>
+          <Typography>{detailText}</Typography>
+        </ModalDialog>
+      </Modal>
     </Grid>
   );
 };
