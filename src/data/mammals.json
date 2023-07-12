@@ -2,31 +2,31 @@
   "animals": [
     {
       "name": "Elephant",
-      "image": "https://unsplash.com/photos/FhbyES4BjG8",
+      "image": "https://images.unsplash.com/photo-1619111712102-8273abfea0aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "funFact": "Elephants are the world's largest land animal!",
       "details": "More details about elephants..."
     },
     {
       "name": "Lion",
-      "image": "https://unsplash.com/photos/7HKdb6i3afk",
+      "image": "https://images.unsplash.com/photo-1631019553258-043d88ef767b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "funFact": "Lions are known as 'kings of the jungle', but they actually live in grasslands and plains.",
       "details": "More details about lions..."
     },
     {
       "name": "Kangaroo",
-      "image": "https://unsplash.com/photos/srsu33Pj7xI",
+      "image": "https://images.unsplash.com/photo-1626803111824-0ee594987d4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "funFact": "Kangaroos use their powerful hind legs to move around and their tail for balance.",
       "details": "More details about kangaroos..."
     },
     {
       "name": "Panda",
-      "image": "https://unsplash.com/photos/s-fD5Tpew2k",
+      "image": "https://images.unsplash.com/photo-1525382455947-f319bc05fb35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=896&q=80",
       "funFact": "Pandas are famous for their love of bamboo, which makes up 99% of their diet.",
       "details": "More details about pandas..."
     },
     {
       "name": "Dolphin",
-      "image": "https://unsplash.com/photos/K6kZKJOmZrk",
+      "image": "https://images.unsplash.com/photo-1591706083700-cf05c6be75e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
       "funFact": "Dolphins are highly intelligent and social marine mammals.",
       "details": "More details about dolphins..."
     }

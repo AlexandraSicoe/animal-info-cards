@@ -2,31 +2,31 @@
   "animals": [
     {
       "name": "Eagle",
-      "image": "https://unsplash.com/photos/EAJ1L4ZjrB4",
+      "image": "https://images.unsplash.com/photo-1497119146420-012f8fc80a3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80",
       "funFact": "Eagles have excellent eyesight and can detect prey up to two miles away.",
       "details": "More details about eagles..."
     },
     {
       "name": "Parrot",
-      "image": "https://unsplash.com/photos/3osGqRRtQBE",
+      "image": "https://images.unsplash.com/photo-1555169062-013468b47731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "funFact": "Parrots are intelligent birds capable of learning many words and phrases.",
       "details": "More details about parrots..."
     },
     {
       "name": "Flamingo",
-      "image": "https://unsplash.com/photos/2lKjBwKwAF8",
+      "image": "https://images.unsplash.com/photo-1629394661462-13ea8fe156ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "funFact": "Flamingos are famous for their bright pink feathers and stilt-like legs.",
       "details": "More details about flamingos..."
     },
     {
       "name": "Penguin",
-      "image": "https://unsplash.com/photos/Ao9nWXs6G6g",
+      "image": "https://images.unsplash.com/photo-1551415923-58aba9efeb2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
       "funFact": "Penguins are flightless birds that live almost exclusively in the Southern Hemisphere.",
       "details": "More details about penguins..."
     },
     {
       "name": "Owl",
-      "image": "https://unsplash.com/photos/KBHqwZ4z69Y",
+      "image": "https://images.unsplash.com/photo-1516233758813-a38d024919c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80",
       "funFact": "Owls are known for their silent flight and distinctive hooting calls.",
       "details": "More details about owls..."
     }

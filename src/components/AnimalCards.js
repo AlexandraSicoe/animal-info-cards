@@ -15,6 +15,7 @@ const AnimalCards = () => {
   const [animalData, setAnimalData] = useState();
   useEffect(() => {
     if (query.get("cat") === "birds") {
+      console.log(birds);
       setAnimalData(birds);
     } else if (query.get("cat") === "reptiles") {
       setAnimalData(reptiles);
@@ -24,13 +25,14 @@ const AnimalCards = () => {
       navigate("/404");
     }
   }, []);
-  useEffect(() => {}, [animalData]);
+  useEffect(() => {
+    console.log(animalData);
+  }, [animalData]);
   return (
     <div
       className="container-fluid"
       style={{
         backgroundColor: "black",
-        width: "100vw",
         height: "100vh",
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -39,30 +41,29 @@ const AnimalCards = () => {
       }}
     >
       <Grid container justifyContent="center" alignItems="center" height="100%">
-        {animalData.animals.map((name, image, funFact, index) => {
+        {animalData?.animals.map((animal, index) => {
           return (
             <Grid m={2}>
               <CardComponent
-                name={name.animals}
-                image={image.animals}
-                funFact={funFact}
+                name={animal.name}
+                image={animal.image}
+                funFact={animal.funFact}
                 index={index}
               />
             </Grid>
           );
         })}
+        <Link to={"/"}>
+          <Button
+            style={{
+              fontSize: "20px",
+              color: "white",
+            }}
+          >
+            Return to the Category Selection Page
+          </Button>
+        </Link>
       </Grid>
-      <Link to={"/"}>
-        <Button
-          style={{
-            fontSize: "20px",
-            color: "white",
-            margin: "10px",
-          }}
-        >
-          Return to the Category Selection Page
-        </Button>
-      </Link>
     </div>
   );
 };

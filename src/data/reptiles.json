@@ -2,31 +2,31 @@
   "animals": [
     {
       "name": "Turtle",
-      "image": "https://unsplash.com/photos/N5ByCirHVqw",
+      "image": "https://images.unsplash.com/photo-1573551089778-46a7abc39d9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
       "funFact": "Turtles have been around for over 200 million years.",
       "details": "More details about turtles..."
     },
     {
       "name": "Crocodile",
-      "image": "https://unsplash.com/photos/dSljWQGDz0s",
+      "image": "https://images.unsplash.com/photo-1471005197911-88e9d4a7834d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80",
       "funFact": "Crocodiles are the world's largest and longest reptile.",
       "details": "More details about crocodiles..."
     },
     {
       "name": "Chameleon",
-      "image": "https://unsplash.com/photos/7DGdHT5LTl0",
+      "image": "https://images.unsplash.com/photo-1534056819131-b3791120051c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "funFact": "Chameleons are famous for their ability to change their color.",
       "details": "More details about chameleons..."
     },
     {
       "name": "Iguana",
-      "image": "https://unsplash.com/photos/_YCUANSCaO4",
+      "image": "https://images.unsplash.com/photo-1590418270220-243198c900cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
       "funFact": "Iguanas have a 'third eye', a photosensitive organ that detects light changes.",
       "details": "More details about iguanas..."
     },
     {
       "name": "Snake",
-      "image": "https://unsplash.com/photos/npNhp50pZko",
+      "image": "https://images.unsplash.com/photo-1528158222524-d4d912d2e208?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1140&q=80",
       "funFact": "Snakes have flexible jaws which allow them to eat prey bigger than their head.",
       "details": "More details about snakes..."
     }
