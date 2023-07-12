@@ -1,17 +1,18 @@
+import Button from "@mui/joy/Button";
 import Grid from "@mui/joy/Grid";
-import backgroundImage from "../images/bg1.jpg";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import birds from "../data/birds.json";
 import mammals from "../data/mammals.json";
 import reptiles from "../data/reptiles.json";
 import useQuery from "../helpers/useQuery";
-import { useNavigate } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import backgroundImage from "../images/bg1.jpg";
 import CardComponent from "./Card";
 
 const AnimalCards = () => {
   const query = useQuery();
   const navigate = useNavigate();
-  const [animalData, setAnimalData] = useState(null);
+  const [animalData, setAnimalData] = useState();
   useEffect(() => {
     if (query.get("cat") === "birds") {
       setAnimalData(birds);
@@ -23,6 +24,7 @@ const AnimalCards = () => {
       navigate("/404");
     }
   }, []);
+  useEffect(() => {}, [animalData]);
   return (
     <div
       className="container-fluid"
@@ -37,10 +39,30 @@ const AnimalCards = () => {
       }}
     >
       <Grid container justifyContent="center" alignItems="center" height="100%">
-        <Grid m={2}>
-          <CardComponent />
-        </Grid>
+        {animalData.animals.map((name, image, funFact, index) => {
+          return (
+            <Grid m={2}>
+              <CardComponent
+                name={name.animals}
+                image={image.animals}
+                funFact={funFact}
+                index={index}
+              />
+            </Grid>
+          );
+        })}
       </Grid>
+      <Link to={"/"}>
+        <Button
+          style={{
+            fontSize: "20px",
+            color: "white",
+            margin: "10px",
+          }}
+        >
+          Return to the Category Selection Page
+        </Button>
+      </Link>
     </div>
   );
 };
